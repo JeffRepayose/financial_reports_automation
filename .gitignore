@@ -1,0 +1,9 @@
+venv/
+.DS_Store
+.idea/
+__pycache__/
+data/
+data/01.2021.csv
+data/02.2021.csv
+data/gl_codes.csv
+.gitignore/
