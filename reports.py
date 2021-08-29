@@ -5,24 +5,26 @@ import numpy as np
 def get_balance_sheet(data):
     pivot = pd.pivot_table(data=data,
                            values=['Amount in local currency'],
-                           index=['Category', 'Category 1', 'GL Description'],
+                           index=['Category 1', 'Category', 'GL Description'],
                            columns=['Year/month'],
                            aggfunc=np.sum,
                            margins=True,
                            margins_name='YTD Total')
-    balance_sheet = pivot.loc['BS'].replace(np.NaN, 0)
+    bs = pivot.loc[['ASSET', 'LIABILITIES', 'YTD Total']].replace(np.NaN, 0)
+    balance_sheet = bs.rename(index={'YTD Total': 'EQUITIES'})
     return balance_sheet
 
 
 def get_gross_margin(data):
     pivot = pd.pivot_table(data=data,
                            values=['Amount in local currency'],
-                           index=['Category 1', 'Category',  'GL Description'],
+                           index=['Category',  'GL Description'],
                            columns=['Year/month'],
                            aggfunc=np.sum,
                            margins=True,
                            margins_name='YTD Total')
-    gross_margin = pivot.loc[['Gross Margin']].replace(np.NaN, 0)
+    gm = pivot.loc[['Sales', 'Cost of Sales', 'YTD Total']].replace(np.NaN, 0)
+    gross_margin = gm.rename(index={'YTD Total': 'Gross Margin'})
     return gross_margin
 
 
@@ -34,8 +36,6 @@ def get_profit_loss(data):
                             aggfunc=np.sum,
                             margins=True,
                             margins_name='YTD Total')
-    profit_loss = pivot.loc[['Gross Margin', 'Operating Expenses']].replace(np.NaN, 0)
+    pnl = pivot.loc[['Gross Margin', 'Operating Expenses', 'YTD Total']].replace(np.NaN, 0)
+    profit_loss = pnl.rename(index={'YTD Total': 'Net Profit'})
     return profit_loss
-
-
-
