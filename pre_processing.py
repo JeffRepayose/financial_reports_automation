@@ -12,10 +12,3 @@ def pre_process_data(data):
         concat_data['Amount in local currency'] = (concat_data['Amount in local currency'].astype(np.float64).round(2))
     processed_data = concat_data
     return processed_data
-
-
-# def as_currency(amount):
-#     if amount >= 0:
-#         return '${:,.2f}'.format(amount)
-#     else:
-#         return '-${:,.2f}'.format(-amount)
