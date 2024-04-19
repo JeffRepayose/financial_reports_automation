@@ -34,7 +34,7 @@ def fs_auto():
     with pd.ExcelWriter('data/financial_reports.xlsx') as writer: 
         ytd_bs.to_excel(writer, sheet_name='balance_sheet')
         ytd_gm.to_excel(writer, sheet_name='gross_margin')
-        ytd_pnl.to_excel(writer, sheet_name='profit_and_loss')
+        ytd_pnl.to_excel(writer, sheet_name='profit_and_loss') 
  
 
 schedule.every().day.at("10:00").do(fs_auto) 
