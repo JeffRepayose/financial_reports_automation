@@ -1,3 +1,4 @@
+# Code by Jeff Repayose
 import pandas as pd
 from pre_processing import pre_process_data
 from reports import get_balance_sheet, get_gross_margin, get_profit_loss
@@ -8,7 +9,7 @@ from datetime import date
 
 
 # Credit Super Programmer - Jeff Repayose
-msg = "XXXXXXXXXXXXXXXXXXXXXXX"
+msg = "XXXXC0XXXXXM3NT_XXXXXXX"
 def fs_auto():
     if date.today().day != 1:
         return
