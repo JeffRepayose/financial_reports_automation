@@ -38,7 +38,7 @@ def fs_auto():
  
 
 schedule.every().day.at("10:00").do(fs_auto) 
-  
+
 while 1:
     schedule.run_pending()
     time.sleep(1)
