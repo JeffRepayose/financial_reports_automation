@@ -8,7 +8,7 @@ from datetime import date
 
 
 # Credit Super Programmer - Jeff Repayose
-msg = "XTX{XXMMXXXXXXXX1XXU3X}"
+msg = "XXXXXXXXXXXXXXXXXXXXXXX"
 def fs_auto():
     if date.today().day != 1:
         return
@@ -22,7 +22,7 @@ def fs_auto():
 
     # pre-processing of data using the function created
     processed_data = pre_process_data(all_data)
-
+ 
     print(processed_data['Year/month'].value_counts())
 
     # generating reports using functions
