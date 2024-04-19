@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-
+ 
 def get_balance_sheet(data):
     pivot = pd.pivot_table(data=data,
                            values=['Amount in local currency'],
