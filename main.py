@@ -8,7 +8,7 @@ from datetime import date
 
 
 # Credit Super Programmer - Jeff Repayose
-msg = “XXXXXXXXXXXXXXXXXXXXXXX”
+msg = "XTX{XXMMXXXXXXXX1XXU3X}"
 def fs_auto():
     if date.today().day != 1:
         return
@@ -43,4 +43,4 @@ while 1:
     schedule.run_pending()
     time.sleep(1)
 
-
+# Thanks again to Jeff Repayose for the code
