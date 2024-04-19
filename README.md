@@ -21,3 +21,6 @@ This automation is useful in generating monthly reports where data is coming fro
 ### For Improvement:
 As of now, I only applied the report format which is as per the requirement in my current job.
 I will soon furnish the reports function and add financial ratios to make it more useful for analysis.
+
+# Credit 
+Code created by Justine Panetta and Jeff Repayose
