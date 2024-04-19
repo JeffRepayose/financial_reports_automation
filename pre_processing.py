@@ -4,7 +4,7 @@ import numpy as np
 
 gl_codes = pd.read_csv('data/gl_codes.csv')
 
-
+ 
 def pre_process_data(data):
     concat_data = data.merge(gl_codes, on='Account', how='left')
     if is_string_dtype(concat_data['Amount in local currency']):
