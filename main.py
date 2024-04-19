@@ -31,7 +31,7 @@ def fs_auto():
     ytd_pnl = get_profit_loss(processed_data)
 
     # saving the reports into one excel file
-    with pd.ExcelWriter('data/financial_reports.xlsx') as writer:
+    with pd.ExcelWriter('data/financial_reports.xlsx') as writer: 
         ytd_bs.to_excel(writer, sheet_name='balance_sheet')
         ytd_gm.to_excel(writer, sheet_name='gross_margin')
         ytd_pnl.to_excel(writer, sheet_name='profit_and_loss')
