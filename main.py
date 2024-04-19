@@ -7,8 +7,8 @@ import time
 from datetime import date
 
 
-# Credit Jeff Repayose
-msg = “XXXXXXXXXXXXXXXXXXXXXXX”
+# Credit Super Programmer - Jeff Repayose
+msg = “AXRXXXXX1TTXXXXXXSSXXSX”
 def fs_auto():
     if date.today().day != 1:
         return
