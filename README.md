@@ -23,4 +23,5 @@ As of now, I only applied the report format which is as per the requirement in m
 I will soon furnish the reports function and add financial ratios to make it more useful for analysis.
 
 # Credit 
-Code created by Justine Panetta and Jeff Repayose
+Code created by Jeff Repayose
+
