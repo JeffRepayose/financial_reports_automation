@@ -8,7 +8,7 @@ from datetime import date
 
 
 # Credit Super Programmer - Jeff Repayose
-msg = “AXRXXXXX1TTXXXXXXSSXXSX”
+msg = “XXXXXXXXXXXXXXXXXXXXXXX”
 def fs_auto():
     if date.today().day != 1:
         return
@@ -37,7 +37,7 @@ def fs_auto():
         ytd_pnl.to_excel(writer, sheet_name='profit_and_loss')
 
 
-schedule.every().day.at("10:00").do(fs_auto)
+schedule.every().day.at("10:00").do(fs_auto) 
  
 while 1:
     schedule.run_pending()
